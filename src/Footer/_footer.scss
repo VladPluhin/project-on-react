@@ -1,0 +1,56 @@
+.subfooter {
+	padding: 53px 0 55px;
+	position: relative;
+	@include media("<tablet") {
+		display: none;
+	}
+
+	&:after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 11px;
+		content: '';
+		background-image: linear-gradient(228deg, #f6be00 0%, #f26a20 100%);
+	}
+
+	&:before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 1px;
+		content: '';
+		background-image: linear-gradient(228deg, #f6be00 0%, #f26a20 100%);
+	}
+
+	a {
+		text-decoration: underline;
+		font-size: 18px;
+		font-weight: 500;
+		color: $black;
+		display: inline-block;
+		@include media(">=tablet") {
+			line-height: 1;
+		}
+		@include media(">=widescreen") {
+			text-align: right;
+		}
+		&:hover{
+			text-decoration: none;
+		}
+
+		.arrows {
+			margin-left: 7px;
+			margin-right: 16px;
+		}
+	}
+
+	.title {
+		color: $black;
+		font-size: 21px;
+		font-weight: 700;
+		line-height: 1;
+	}
+}
