@@ -11,7 +11,7 @@ const Form = (props) => {
     return (
         <form action="" className={classes.formSubscribe}>
             {inputs.map((i) =>
-                <div className={classes.inputWrapper}>
+                <div className={classes.inputWrapper} key={i.id}>
                     <input type={i.type} placeholder={i.textPlaceholder}/>
                 </div>
             )}

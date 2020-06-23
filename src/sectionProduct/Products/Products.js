@@ -8,11 +8,10 @@ const Products = (props) => {
             return item;
         }
     });
-    console.log(product);
     return (
         <div className={classes.cardWrapper}>
             {product.map((item) => (
-                <div className={classes.card}>
+                <div className={classes.card} key={item.id}>
                     <div className={classes.imageholder}>
                         <img src={item.image} alt="image description"/>
                     </div>

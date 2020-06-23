@@ -1,10 +1,10 @@
 let state = {
     _data: {
         links:[
-            {link: 'About', label: 'About'},
-            {link: 'news', label: 'news'},
-            {link: 'contact', label: 'contact'},
-            {link: 'product', label: 'product'}
+            {link: 'About', label: 'About',id:1},
+            {link: 'news', label: 'news',id:2},
+            {link: 'contact', label: 'contact',id:3},
+            {link: 'product', label: 'product',id:4}
         ],
         sliderContent: [
             {
@@ -12,36 +12,42 @@ let state = {
                 description: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam asperiores consequatur culpa doloremque eligendi eum fugit impedit incidunt maxime natus, nulla obcaecati odit officiis quae quam quos, sed sequi?',
                 button: 'Read More',
                 image: 'https://i.imgur.com/ZXBtVw7.jpg',
+                id:5
             },
             {
                 title: 'title with description',
                 description:' Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam asperiores consequatur culpa doloremque eligendi eum fugit impedit incidunt maxime natus, nulla obcaecati odit officiis quae quam quos, sed sequi?',
                 button: 'Read More',
                 image: 'https://i.imgur.com/DCdBXcq.jpg',
+                id:6
             },
             {
                 title: 'title with description',
                 description:' Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam asperiores consequatur culpa doloremque eligendi eum fugit impedit incidunt maxime natus, nulla obcaecati odit officiis quae quam quos, sed sequi?',
                 button: 'Read More',
                 image: 'https://i.imgur.com/DvmN8Hx.jpg',
+                 id:7
             },
             {
                 title: 'title with description',
                 description:' Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam asperiores consequatur culpa doloremque eligendi eum fugit impedit incidunt maxime natus, nulla obcaecati odit officiis quae quam quos, sed sequi?',
                 button: 'Read More',
                 image: 'https://i.imgur.com/ZXBtVw7.jpg',
+                id:8
             },
             {
                 title: 'title with description',
                 description:' Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam asperiores consequatur culpa doloremque eligendi eum fugit impedit incidunt maxime natus, nulla obcaecati odit officiis quae quam quos, sed sequi?',
                 button: 'Read More',
                 image: 'https://i.imgur.com/DCdBXcq.jpg',
+                id:9
             },
             {
                 title: 'title with description',
                 description:' Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam asperiores consequatur culpa doloremque eligendi eum fugit impedit incidunt maxime natus, nulla obcaecati odit officiis quae quam quos, sed sequi?',
                 button: 'Read More',
                 image: 'https://i.imgur.com/ZXBtVw7.jpg',
+                id:10
             },
         ],
         card: [
@@ -51,6 +57,7 @@ let state = {
                 title: 'Commercial Production',
                 text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam asperiores consequatur culpa doloremque eligendi eum fugit',
                 button: 'How We Work?',
+                id:11
 
             },
         ],
@@ -59,6 +66,7 @@ let state = {
                 channel: 'youtube',
                 videoId: '/Yj6K4LZ-5HQ',
                 bg: 'https://i.imgur.com/ZXBtVw7.jpg',
+                id:12
             },
         ],
         newsContent: [
@@ -68,18 +76,21 @@ let state = {
                 title:  'Do you want us to Feature a specific FruitTube?',
                 button: 'Read More',
                 image: 'https://i.imgur.com/ZXBtVw7.jpg',
+                id:13
             },
             {
                 news: true,
                 title:  'February Issue of Nursery Management Magazine',
                 button: 'Read More',
                 image: 'https://i.imgur.com/DCdBXcq.jpg',
+                id:14
             },
             {
                 news: true,
                 title:  'Acquisition of Fredriks Nursery in Ripon, California',
                 button: 'Read More',
                 image: 'https://i.imgur.com/ZXBtVw7.jpg',
+                id:15
             },
         ],
        contactInfo: [
@@ -94,26 +105,31 @@ let state = {
                     typeInput: true,
                     textPlaceholder:  'Email',
                     type:  'email',
+                    id:16
                 },
             {
                 typeInput: true,
                 textPlaceholder:  'Name',
                 type:  'text',
+                id:17
             },
             {
                 typeInput: true,
                 textPlaceholder:  'Phone',
                 type:  'tel',
+                id:18
             },
             {
                 typeInput: true,
                 textPlaceholder:  'Surname',
                 type:  'text',
+                id:19
 
             },
             {
                 typeTextarea:true,
                 textPlaceholder:  'Comment',
+                id:71
             },
             {
                 button: 'Submit',
@@ -131,30 +147,34 @@ let state = {
                description:' Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam asperiores consequatur culpa doloremque eligendi eum fugit impedit incidunt maxime natus, nulla obcaecati odit officiis quae quam quos, sed sequi?',
                button: 'Add to  Cart',
                image: 'https://i.imgur.com/ZXBtVw7.jpg',
+
            },
            {
                product: true,
-               id:'02',
+
                title: 'title with description',
                description:' Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam asperiores consequatur culpa doloremque eligendi eum fugit impedit incidunt maxime  officiis quae quam quos, sed sequi?',
                button: 'Add to  Cart',
                image: 'https://i.imgur.com/ZXBtVw7.jpg',
+               id:744
            },
            {
                product: true,
-               id:'03',
+
                title: 'title with description',
                description:' Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam asperiores consequaturobcaecati odit officiis quae quam quos, sed sequi?',
                button: 'Add to  Cart',
                image: 'https://i.imgur.com/ZXBtVw7.jpg',
+               id:75
            },
            {
                product: true,
-               id:'04',
+
                title: 'title with description',
                description:' Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam asperiores consequatur culpa doloremque ',
                button: 'Add to Cart',
                image: 'https://i.imgur.com/ZXBtVw7.jpg',
+               id:73
            },
        ]
     },
