@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Products.module.scss';
-import BtnPrimary from "../../components/buttons/buttons";
+import BtnCard from "../../components/buttons/btnCard";
 
 const Products = (props) => {
     const product= props.productList.filter(function(item){
@@ -19,7 +19,7 @@ const Products = (props) => {
                     <div className={classes.text}>
                         <p>{item.description}</p>
                     </div>
-                    <BtnPrimary btnText={item.button}/>
+                    <BtnCard btnText={item.button}/>
                 </div>
             ))}
         </div>

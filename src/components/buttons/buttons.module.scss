@@ -17,3 +17,32 @@
     box-shadow:0px 0px 10px #ffffff59;
   }
 }
+
+.btnCard {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 35px;
+  text-decoration: none;
+  min-width: 150px;
+  justify-content: center;
+  padding: 18px;
+  transition: all .3s ease;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  width: max-content;
+  &:hover {
+    background-color: #292b8a82;
+    box-shadow:0px 0px 10px #ffffff59;
+  }
+  i {
+    font-style: normal;
+    margin-left: 10px;
+    display: inline-block;
+    font-family: fontAwesome;
+  }
+}

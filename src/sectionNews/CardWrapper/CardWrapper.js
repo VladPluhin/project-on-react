@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from  './CardWrapper.module.scss';
-import BtnPrimary from "../../components/buttons/buttons";
+import BtnPrimary from "../../components/buttons/btnPrimary";
 
 
 const CardWrapper = (props) => {

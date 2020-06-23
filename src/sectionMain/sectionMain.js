@@ -3,7 +3,7 @@ import Slider from './slider/slider';
 import 'react-animated-slider/build/horizontal.css';
 import './slider/slider.scss';
 import classes from './sectionMain.module.scss';
-import BtnPrimary from "../components/buttons/buttons";
+import BtnPrimary from "../components/buttons/btnPrimary";
 
 const SectionMain = (props) => {
     return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from  './Form.module.scss';
-import BtnPrimary from "../buttons/buttons";
+import BtnPrimary from "../buttons/btnPrimary";
 
 const Form = (props) => {
     const inputs=props.form.filter(function(item) {
