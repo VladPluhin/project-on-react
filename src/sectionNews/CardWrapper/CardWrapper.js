@@ -10,7 +10,7 @@ const CardWrapper = (props) => {
         }
     });
   return (
-      <div className={classes.cardWrapper}>
+     
           {newsCards.map((item) => (
              <div className={classes.card}>
                   <div className={classes.imgholder}>
