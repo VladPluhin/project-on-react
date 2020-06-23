@@ -13,5 +13,4 @@ const SectionNews = (props) => {
         </section>
     )
 }
-
 export default SectionNews;

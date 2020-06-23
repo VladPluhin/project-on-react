@@ -6,7 +6,6 @@ import state from "./state/state";
 import  './style.scss';
 import  {BrowserRouter} from 'react-router-dom';
 
-
 const rerenderPage = (state, logo) => {
     ReactDOM.render(
         <BrowserRouter>
