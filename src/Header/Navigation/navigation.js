@@ -1,23 +1,39 @@
-import React, { useState } from 'react';
-import classes from  './navigation.module.scss';
+import React, {Component, useState} from 'react';
+import  './navigation.scss';
 
 
-const Navigation = (props) => {
-
-    const menuLink = props.links.map(f => {
+export default class Navigation extends Component {
+    state= {
+        hover: false,
+    };
+  onLinkClick=() => {
+      this.setState({
+          hover: true
+      })
+  }
+  render() {
+    const {hover}= this.state;
+    let classNames= '';
+    if(hover){
+        classNames += 'hover';
+    }
+    const menuLink = this.props.links.map(f => {
         const url ="/"+ f.link.toLowerCase().trim();
         return (
-            <li key={f.id}>
-                <a href={url}>{ f.label} </a>
+            <li key={ f.id} className={classNames}>
+               <span onClick={this.onLinkClick} >
+                    {f.label}
+               </span>
             </li>
         )
     })
     return (
-        <ul className={classes.navLists}>
+        <ul className={'navLists'}>
             {menuLink}
         </ul>
     )
-
+  }
 }
 
-export default  Navigation;
+
+

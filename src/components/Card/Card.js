@@ -8,7 +8,6 @@ const Card = (props) => {
             return item;
         }
     });
-
   return (
       <div className={classes.card} >
           <span className={classes.subtitle}>{videoInfo.map((f=>f.subtitle))}</span>
