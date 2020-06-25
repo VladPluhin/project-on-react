@@ -1,11 +1,45 @@
-let state = {
+let state;
+state = {
     _data: {
-        links:[
-            {link: 'About', label: 'About', id:1, linknav:'about', submenu: true,},
-            {link: 'news', label: 'news',id:2, submenu: false},
-            {link: 'contact', label: 'contact',id:3, submenu: false},
-            {link: 'product', label: 'product',id:4, submenu: false},
-
+        links: [
+            {
+                link: 'About',
+                label: 'About',
+                id: 1, linknav: 'about',
+                opener: true,
+                submenu: [
+                    {
+                        link: 'lorem',
+                        label: 'lorem',
+                        id:222,
+                        opener: false
+                    },
+                    {
+                        link: 'lorem',
+                        label: 'lorem',
+                        id:222,
+                        opener: false
+                    },
+                ],
+           },
+            {
+                link: 'news',
+                label: 'news',
+                id:2,
+                opener: false
+            },
+            {
+                link: 'contact',
+                label: 'contact',
+                id:3,
+                opener: false
+            },
+            {
+                link: 'product',
+                label: 'product',
+                id:4,
+                opener: false
+            },
         ],
         sliderContent: [
             {
