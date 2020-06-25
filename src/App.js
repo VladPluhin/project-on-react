@@ -9,7 +9,7 @@ import Footer from './Footer/Footer';
 
 const App = (props) => {
   return (
-      <div className='wrapper' >
+      <div className='wrapper'>
         <Header links={props.data.links} logo={props.logo}/>
         <SectionMain  sliderContent={props.data.sliderContent}/>
         <SectionVideo card={props.data.card} video={props.data.video}/>

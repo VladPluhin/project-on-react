@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './Footer.module.css';
 import Logo from "../Header/logo/logo";
 import logo from "../Header/logo/logo.png";
-import Navigation from "../Header/Navigation/navigation";
+
 
 const Footer = (props) => {
 	return (
@@ -11,7 +11,18 @@ const Footer = (props) => {
 				<div className={classes.logo}>
 					<Logo logo={logo}/>
 				</div>
-				<Navigation links={props.links}/>
+                <ul className='navLists'>
+                    {props.links.map((item) => {
+                        const url ="/"+ item.link.toLowerCase().trim();
+                       return (
+                           <li>
+                               <a href={url}>
+                                   {item.label}
+                               </a>
+                           </li>
+                       )
+                       })}
+                </ul>
 			</div>
 		</footer>
 	)

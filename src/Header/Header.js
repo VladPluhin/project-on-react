@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from  './Header.module.scss';
 import Logo from "./logo/logo";
-import Navigation from "./Navigation/navigation";
+import Navigation from  './Navigation/navigation'
 import logo from "./logo/logo.png"
 
 
