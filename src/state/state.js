@@ -1,10 +1,11 @@
 let state = {
     _data: {
         links:[
-            {link: 'About', label: 'About',id:1},
-            {link: 'news', label: 'news',id:2},
-            {link: 'contact', label: 'contact',id:3},
-            {link: 'product', label: 'product',id:4}
+            {link: 'About', label: 'About', id:1, linknav:'about', submenu: true,},
+            {link: 'news', label: 'news',id:2, submenu: false},
+            {link: 'contact', label: 'contact',id:3, submenu: false},
+            {link: 'product', label: 'product',id:4, submenu: false},
+
         ],
         sliderContent: [
             {

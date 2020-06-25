@@ -12,7 +12,7 @@ const Header = (props) => {
                 <div className={classes.logo}>
                     <Logo logo={logo}/>
                 </div>
-                <Navigation links={props.links}/>
+                <Navigation links={props.links}  submenu={props.submenu}/>
             </div>
         </header>
     )
