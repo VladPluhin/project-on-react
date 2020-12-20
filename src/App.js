@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from './Header/Header.js';
-import SectionMain from './sectionMain/sectionMain';
-import  SectionVideo from './sectionVideo/sectionVideo';
-import SectionNews from "./sectionNews/sectionNews";
-import SectionContact from './sectionContact/sectionContact';
-import SectionProduct from './sectionProduct/sectionProduct';
-import Footer from './Footer/Footer';
+import Header from './components/Header/Header.js';
+import SectionMain from './components/sectionMain/sectionMain';
+import SectionVideo from './components/sectionVideo/sectionVideo';
+import SectionNews from "./components/sectionNews/sectionNews";
+import SectionContact from './components/sectionContact/sectionContact';
+import SectionProduct from './components/sectionProduct/sectionProduct';
+import Footer from './components/Footer/Footer';
 
 const App = (props) => {
   return (
